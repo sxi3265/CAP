@@ -29,12 +29,12 @@ namespace DotNetCore.CAP
         /// <summary>
         /// Manual submit message offset when the message consumption is complete
         /// </summary>
-        void Commit();
+        void Commit(MessageContext messageContext);
 
         /// <summary>
         /// Reject message and resumption
         /// </summary>
-        void Reject();
+        void Reject(MessageContext messageContext);
 
         event EventHandler<MessageContext> OnMessageReceived;
 

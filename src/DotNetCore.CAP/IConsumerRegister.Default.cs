@@ -154,7 +154,7 @@ namespace DotNetCore.CAP
                 {
                     StoreMessage(receivedMessage);
 
-                    client.Commit();
+                    client.Commit(messageContext);
 
                     TracingAfter(operationId, receivedMessage.Name, receivedMessage.Content, startTime,
                         stopwatch.Elapsed);
@@ -165,7 +165,7 @@ namespace DotNetCore.CAP
                 {
                     _logger.LogError(e, "An exception occurred when store received message. Message:'{0}'.", messageContext);
 
-                    client.Reject();
+                    client.Reject(messageContext);
 
                     TracingError(operationId, receivedMessage.Name, receivedMessage.Content, e, startTime,
                         stopwatch.Elapsed);

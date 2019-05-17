@@ -60,12 +60,12 @@ namespace DotNetCore.CAP.Kafka
             // ReSharper disable once FunctionNeverReturns
         }
 
-        public void Commit()
+        public void Commit(MessageContext messageContext)
         {
             _consumerClient.Commit();
         }
 
-        public void Reject()
+        public void Reject(MessageContext messageContext)
         {
             _consumerClient.Assign(_consumerClient.Assignment);
         }

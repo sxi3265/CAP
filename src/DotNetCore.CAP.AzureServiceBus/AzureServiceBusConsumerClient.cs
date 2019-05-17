@@ -87,12 +87,12 @@ namespace DotNetCore.CAP.AzureServiceBus
             // ReSharper disable once FunctionNeverReturns
         }
 
-        public void Commit()
+        public void Commit(MessageContext messageContext)
         {
             _consumerClient.CompleteAsync(_lockToken);
         }
 
-        public void Reject()
+        public void Reject(MessageContext messageContext)
         {
             // ignore
         }

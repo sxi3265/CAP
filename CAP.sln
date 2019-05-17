@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9B2AE124-6636-4DE9-83A3-70360DABD0C4}"
 EndProject
@@ -68,7 +68,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.CAP.InMemoryStor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.AzureServiceBus.InMemory", "samples\Sample.AzureServiceBus.InMemory\Sample.AzureServiceBus.InMemory.csproj", "{1E1E959C-3D0E-45C3-ABCA-DAAACE68AAB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.CAP.CastleCoreTest", "test\DotNetCore.CAP.CastleCoreTest\DotNetCore.CAP.CastleCoreTest.csproj", "{BA499B87-77A9-43A2-98A3-89ECF5034E26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.CAP.CastleCoreTest", "test\DotNetCore.CAP.CastleCoreTest\DotNetCore.CAP.CastleCoreTest.csproj", "{BA499B87-77A9-43A2-98A3-89ECF5034E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.CAP.ActiveMQ", "DotNetCore.CAP.ActiveMQ\DotNetCore.CAP.ActiveMQ.csproj", "{6AC34801-B404-4BE4-89CA-A67AEDAD0066}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -148,6 +150,10 @@ Global
 		{BA499B87-77A9-43A2-98A3-89ECF5034E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA499B87-77A9-43A2-98A3-89ECF5034E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA499B87-77A9-43A2-98A3-89ECF5034E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AC34801-B404-4BE4-89CA-A67AEDAD0066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC34801-B404-4BE4-89CA-A67AEDAD0066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC34801-B404-4BE4-89CA-A67AEDAD0066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC34801-B404-4BE4-89CA-A67AEDAD0066}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,6 +178,7 @@ Global
 		{58B6E829-C6C8-457C-9DD0-C600650254DF} = {9B2AE124-6636-4DE9-83A3-70360DABD0C4}
 		{1E1E959C-3D0E-45C3-ABCA-DAAACE68AAB8} = {3A6B6931-A123-477A-9469-8B468B5385AF}
 		{BA499B87-77A9-43A2-98A3-89ECF5034E26} = {C09CDAB0-6DD4-46E9-B7F3-3EF2A4741EA0}
+		{6AC34801-B404-4BE4-89CA-A67AEDAD0066} = {9B2AE124-6636-4DE9-83A3-70360DABD0C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E70565D-94CF-40B4-BFE1-AC18D5F736AB}

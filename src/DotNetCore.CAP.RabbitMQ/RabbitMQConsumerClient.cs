@@ -72,12 +72,12 @@ namespace DotNetCore.CAP.RabbitMQ
             // ReSharper disable once FunctionNeverReturns
         }
 
-        public void Commit()
+        public void Commit(MessageContext messageContext)
         {
             _channel.BasicAck(_deliveryTag, false);
         }
 
-        public void Reject()
+        public void Reject(MessageContext messageContext)
         {
             _channel.BasicReject(_deliveryTag, true);
         }

@@ -7,18 +7,14 @@ namespace DotNetCore.CAP
 {
     public enum MqLogType
     {
-        //RabbitMQ
         ConsumerCancelled,
         ConsumerRegistered,
         ConsumerUnregistered,
         ConsumerShutdown,
-
-        //Kafka
         ConsumeError,
         ServerConnError,
-
-        //AzureServiceBus
-        ExceptionReceived
+        ExceptionReceived,
+        MessageException
     }
 
     public class LogMessageEventArgs : EventArgs
